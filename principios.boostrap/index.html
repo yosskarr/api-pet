@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <form action="">    
+    <div class="container">            
+            <div class="row">
+                <div class="col">
+                    <h1>Formulario de registro</h1>
+                </div>
+             </div>
+             <!-- Campo de usuario -->
+             <div class="row">
+                 <div class="col-2">
+                    <p class="text-capitalize">usuario(*)</p>
+                </div>
+                <div class="col-4">
+                    <input type="text" class="form-control" placeholder="ingrese su usuario" required >
+                </div>
+            </div>
+            <br>
+            <!-- Campo de contraseña -->
+            <div class="row">
+                <div class="col-2">
+                    <p class="text-capitalize">contraseña(*)</p>
+                </div>
+                <div class="col-4">
+                    <input type="password" class="form-control" placeholder="ingrese su contraseña" required >
+                </div>
+            </div>
+        
+        <br>
+        <!-- Selección de tecnologías -->
+        <div class="row">
+            <div class="col">
+                <p class="text-capitalize">Tecnologias(*)</p>
+            </div>
+            <div class="col-10" class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                <!-- Opciones de tecnologías -->
+                <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btncheck1">java</label>
+              
+                <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btncheck2">php</label>
+              
+                <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                <label class="btn btn-outline-primary" for="btncheck3">.net 3</label>
+            </div>
+        </div>
+        <br>
+        <!-- Selección de género -->
+        <div class="row">
+            <div class="col">
+                <p class="text-capitalize">Género(*)</p>
+            </div>
+            <div class="col-10 ">
+                <!-- Opciones de género -->
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" id="hombre" name="genero" value="Hombre">
+                    <label class="form-check-label" for="hombre">Hombre</label>
+                </div>
+                <div class="form-check form-check-inline" >
+                    <input class="form-check-input" type="radio" id="mujer" name="genero" value="Mujer">
+                    <label class="form-check-label" for="mujer">Mujer</label>
+                </div>
+            </div>
+        </div>
+        <br>
+        <!-- Selección de ocupación -->
+        <div class="row">
+            <div class="col">
+              <p class="text-capitalize">Ocupación(*)</p>
+            </div>
+            <div class="col-10">
+                <!-- Opciones de ocupación -->
+                <select class=" ml-auto form-control" id="ocupacion">
+                    <option value="">Selecciona una opción</option>
+                    <option value="profesor">Profesor</option>
+                    <option value="ingeniero">Ingeniero</option>
+                    <option value="jardinero">Jardinero</option>
+                    <option value="camionero">Camionero</option>
+                </select>
+            </div>
+        </div>
+        <br>
+        <!-- Campo de comentarios -->
+        <div class="row">
+            <div class="col">
+             <p class="text-capitalize">Comentarios(*)</p>
+            </div>
+            <div class="col-10">
+             <textarea class="form-control" id="comentarios" rows="3"></textarea>
+            </div>
+        </div>
+        <br>      
+        <div class="row">
+            <div class="col">
+                <!-- Botón de limpiar  -->
+                <button type="reset" class="btn btn-secondary">Limpiar</button>
+            </div>
+            <div class="col-10">                
+                <div class="row">
+                    <div class="col">
+                        <!-- Botón de enviar -->
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div>                 
+    </div>
+    </form>   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
